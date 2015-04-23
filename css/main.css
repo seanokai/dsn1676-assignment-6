@@ -41,6 +41,10 @@ div {
   background-color: limegreen;
 }
 
+.js-btn-show {
+    opacity: 1;
+}
+
 .diamond {
   height: 80px;
   right: 2em;
