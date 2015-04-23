@@ -15,3 +15,26 @@ $btnShowHide.on('click', function (){
 
 });
 
+$btnMove.on('click', function () {
+    $diamond.toggleClass('js-move');
+});
+
+$btnCollapseExpand.on('click',function () {
+    $panel.toggleClass('js-panel-collapse');
+});
+
+$btnBounce.on('click', function (){
+    $circle.addClass('js-ball-bounce');
+});
+
+$circle.on('webkitAnimationEnd animationed', function () {
+    $circle.removeClass('js-ball-bounce');
+});
+
+$btnAppend.on('click', function (){
+
+    var $li = $('<li>').html('New List Item');
+
+    $list.prepend($li);
+    $li.toggleClass('js-list-append');
+});
